@@ -16,6 +16,29 @@
     <link href="~/assets/css/style.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/assets/js/slick.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="~/assets/js/jquery.fancybox.pack.js"></script>
+    <script src="~/assets/js/waypoints.js"></script>
+    <script src="~/assets/js/jquery.counterup.js"></script>
+    <script type="text/javascript" src="~/assets/js/wow.js"></script>
+    <script type="text/javascript" src="~/assets/js/bootstrap-progressbar.js"></script>
+    <script type="text/javascript" src="~/assets/js/custom.js"></script>
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+
+    <script>
+            System.import('app').catch(function (err) { console.error(err); });
+    </script>
+
+
 </head>
 <body>
     <div id="preloader">
@@ -163,6 +186,12 @@
             </div>
         </nav>
     </section>
+
+    <my-app>
+        Loading...
+    </my-app>
+
+
     @RenderBody()
     <footer id="footer">
         <div class="container">
@@ -184,27 +213,7 @@
             </div>
         </div>
     </footer>
-    <script src="~/assets/js/jquery.min.js"></script>
-    <script src="~/assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="~/assets/js/slick.js"></script>
-    <script type="text/javascript" src="~/assets/js/jquery.mixitup.js"></script>
-    <script type="text/javascript" src="~/assets/js/jquery.fancybox.pack.js"></script>
-    <script src="~/assets/js/waypoints.js"></script>
-    <script src="~/assets/js/jquery.counterup.js"></script>
-    <script type="text/javascript" src="~/assets/js/wow.js"></script>
-    <script type="text/javascript" src="~/assets/js/bootstrap-progressbar.js"></script>
-    <script type="text/javascript" src="~/assets/js/custom.js"></script>
-
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="systemjs.config.js"></script>
-
-    <script>
-            System.import('app').catch(function (err) { console.error(err); });
-    </script>
-
+  
 
 </body>
 </html>
